@@ -18,6 +18,7 @@ To start using StagEz you need to have the <a href="https://github.com/IceHacks/
 
 </script>
 ...
+<canvas id="canvasID"></canvas>
 ```
 
 Now you are ready to begin learning :)
@@ -27,7 +28,7 @@ Now you are ready to begin learning :)
 Add this to your open `<script>` to make the stage.
 
 ```javascript
-var stage = new Stage();
+var stage = new Stage({"id": "canvasID"});
 ```
 
 The stage has the following methods:
@@ -43,3 +44,16 @@ The stage has the following methods:
 * `.mouse.y` - returns the current mouse Y pos. Not a function.
 
 Bigger documentation coming soon :)
+
+
+## Demos
+
+Here are some demos so you can get some ideas.
+
+```javascript
+// This demo draws and image and then focuses it to the center.
+var stage = new Stage({id: "canvasID"});
+stage.clear();
+stage.draw.image("https://cdn.pixabay.com/photo/2017/02/04/16/34/sport-2037681_960_720.jpg", 10000, 10000);
+stage.focusOn(10000, 10000);
+```
