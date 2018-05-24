@@ -41,3 +41,5 @@ The stage has the following methods:
 * `.focusOn(x, y)` - move `x, y` to the center (great for games)
 * `.mouse.x` - returns the current mouse X pos. Not a function.
 * `.mouse.y` - returns the current mouse Y pos. Not a function.
+
+Bigger documentation coming soon :)
