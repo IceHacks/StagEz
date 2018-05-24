@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="main.js"></script>
+    <script>
+      var start = function () {
+        var stage = new Stage({id: "id"});
+        // Clear the canvas
+        stage.clear();
+        // Draw an image
+        stage.draw.image("https://findicons.com/files/icons/574/neige/128/clipping_picture.png", 400, 400);
+        // Focus on point x400-y400 (aka put that in the center)
+        stage.focusOn(400, 400);
+      }
+    </script>
+  </head>
+  <body onload="start();">
+    <canvas id="id"></canvas>
+  </body>
+</html>
