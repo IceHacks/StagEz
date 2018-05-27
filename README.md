@@ -38,10 +38,15 @@ The stage has the following methods:
 * `.width()` - returns the width of the stage.
 * `.height()` - returns the height of the stage.
 * `.draw.image(src, x, y)` - draws an image on the stage. You can set `src` to a URL or an Image Object. There are optional values.
+* `.draw.imageRot(src, x, y, r)` - `draw.image(...)` but with `r` angle to rotate by (in radians).
+* `.draw.rect(width, height, x, y, color, centered)` - draws a rectangle.
+* `.draw.ellipse(x, y, width, height, color)` - draws an ellipse.
 * `.clear()` - clear the stage.
 * `.focusOn(x, y)` - move `x, y` to the center (great for games)
 * `.mouse.x` - returns the current mouse X pos. Not a function.
 * `.mouse.y` - returns the current mouse Y pos. Not a function.
+* `.save()` - saves the canvas (`CanvasContext2d.save()`).
+* `.restore()` - restores the canvas (`CanvasContext2d.restore()`).
 
 Bigger documentation coming soon :)
 
@@ -57,3 +62,13 @@ stage.clear();
 stage.draw.image("https://cdn.pixabay.com/photo/2017/02/04/16/34/sport-2037681_960_720.jpg", 10000, 10000);
 stage.focusOn(10000, 10000);
 ```
+
+## Plans
+
+Here are some plans we have for the future of StagEz.js:
+
+* Spritesheets
+* More shapes (ex: Star)
+* Lines and arcs
+* Dropping `.save()` and `.restore()`
+* Strokes
